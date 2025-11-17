@@ -15,7 +15,7 @@ async function loadModel() {
     await initEnvironment();
     pipelineInstance = await window.transformers.pipeline(
         "feature-extraction",
-        "Xenova/all-MiniLM-L6-v2"
+        "./model"
     );
     outputDiv.innerText = "Model loaded! Enter sentences and click Compute.";
 }
